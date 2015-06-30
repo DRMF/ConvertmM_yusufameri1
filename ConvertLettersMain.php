@@ -10,8 +10,7 @@
     <br>
 <h1 align="center">Yusuf's Case Swapper</h1>
 
-
-    <p align="center">This program
+    <p align="center"> This program
         reads in a text file from a given URL (the default URL is
         <a href="https://staff.fnwi.uva.nl/t.h.koornwinder/art/informal/KLSadd.tex" color="">https://staff.fnwi.uva.nl/t.h.koornwinder/art/informal/KLSadd.tex</a>)
         and replaces for a given letter, the case fo that letter. (There is also an option to
@@ -33,39 +32,17 @@
             </tr>
         </table>
         <p align="center">
-            <select name="let_select">
-                <option value="All Letters">All Letters</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
-                <option value="G">G</option>
-                <option value="H">H</option>
-                <option value="I">I</option>
-                <option value="J">J</option>
-                <option value="K">K</option>
-                <option value="L">L</option>
-                <option value="M">M</option>
-                <option value="N">N</option>
-                <option value="O">O</option>
-                <option value="P">P</option>
-                <option value="Q">Q</option>
-                <option value="R">R</option>
-                <option value="S">S</option>
-                <option value="T">T</option>
-                <option value="U">U</option>
-                <option value="V">V</option>
-                <option value="W">W</option>
-                <option value="X">X</option>
-                <option value="Y">Y</option>
-                <option value="Z">Z</option>
+            <select name="lettersDDMenu">
+                <?php
+                    $options = ["All Letters"];
+                    $options = array_merge($options, str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ"));
+                    foreach ($options as $option) {
+                        echo "<option value=\" . $option. \">$option</option>";
+                    }
+                ?>
             </select>
             <input type="submit"value="Convert"align="center">
         </p>
-
     </form>
-
 </body>
 </html>
