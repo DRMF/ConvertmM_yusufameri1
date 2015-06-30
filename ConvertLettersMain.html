@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Case Swaper</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+<h1 align="center">Yusuf's Case Swapper</h1>
+
+
+    <p align="center">This program
+        reads in a text file from a given URL (the default URL is
+        <a href="https://staff.fnwi.uva.nl/t.h.koornwinder/art/informal/KLSadd.tex" color="">https://staff.fnwi.uva.nl/t.h.koornwinder/art/informal/KLSadd.tex</a>)
+        and replaces for a given letter, the case fo that letter. (There is also an option to
+        replace the case of all letters simultaneously). The user can choose the name of the
+        output text file which, by default, is saved (in Firefox) to the Downloads directory.
+    </p>
+
+    <br>
+    <br>
+    <form action="alternative_swap.php" method="post">
+        <table align="center">
+            <tr>
+                <td>URL:</td>
+                <td> <input type="text" value="https://staff.fnwi.uva.nl/t.h.koornwinder/art/informal/KLSadd.tex"name="url"></td>
+            </tr>
+            <tr>
+                <td>File Name:</td>
+                <td><input type="text" value="Sample_Name.tex"name="newfilename"> </td>
+            </tr>
+        </table>
+        <p align="center">
+            <select name="let_select">
+                <option value="All Letters">All Letters</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+                <option value="U">U</option>
+                <option value="V">V</option>
+                <option value="W">W</option>
+                <option value="X">X</option>
+                <option value="Y">Y</option>
+                <option value="Z">Z</option>
+            </select>
+            <input type="submit"value="Convert"align="center">
+        </p>
+
+    </form>
+
+</body>
+</html>
