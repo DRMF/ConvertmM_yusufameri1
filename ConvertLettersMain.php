@@ -34,10 +34,10 @@
         <p align="center">
             <select name="lettersDDMenu">
                 <?php
-                    $options = ["All Letters"];
-                    $options = array_merge($options, str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ"));
-                    foreach ($options as $option) {
-                        echo "<option value=\" . $option. \">$option</option>";
+                    $first = ["All Letters"];
+                    $options = array_merge($first, str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ"));
+                foreach ($options as $option) {
+                        echo "<option value=\"$option\">$option</option>";
                     }
                 ?>
             </select>

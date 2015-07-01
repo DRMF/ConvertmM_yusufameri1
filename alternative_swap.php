@@ -23,16 +23,16 @@ else {
 function swapAllCases ( $string_file )
 {
     // ASCII values of capital and lowercase letters
-    $captialA = 65;
-    $captalZ = 90;
+    $capitalA = 65;
+    $capitalZ = 90;
     $lowercaseA = 97;
     $lowercaseZ = 122;
     foreach ( $string_file as $value ) {
         $ASCII_of_char = ord ( $value );
-        if ( $ASCII_of_char >= $captialA && $ASCII_of_char <= $captalZ ) { // capital version of letters
+        if ( $ASCII_of_char >= $capitalA && $ASCII_of_char <= $capitalZ ) {
             echo chr( $ASCII_of_char + 32 );
         }
-        elseif ( $ASCII_of_char >= $lowercaseA && $ASCII_of_char <= $lowercaseZ ) { // lowercase version of letters
+        elseif ( $ASCII_of_char >= $lowercaseA && $ASCII_of_char <= $lowercaseZ ) {
             echo chr( $ASCII_of_char - 32 );
         }
         else {
@@ -43,9 +43,7 @@ function swapAllCases ( $string_file )
 
 function swapSingleCase ( $string_file , $the_letter ) {
     $Capv_letter = $the_letter;
-    echo "The Cav_Letter = " . $Capv_letter;
     $Lowv_letter = chr ( ord ( $the_letter ) + 32 );
-    echo "The Low_Letter = " . $Lowv_letter;
     foreach ( $string_file as $value ) {
         $ASCII_of_char = ord ( $value );
         if ( $value == $Capv_letter ) {
